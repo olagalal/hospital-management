@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="685.0" style="-fx-background-color: #1565C0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.UAppController">
+   <children>
+      <TilePane layoutX="411.0" layoutY="292.0" prefHeight="116.0" prefWidth="253.0" style="-fx-background-color: #2979FF;" />
+      <TilePane layoutX="411.0" layoutY="75.0" prefHeight="208.0" prefWidth="253.0" style="-fx-background-color: #2979FF;" />
+      <Label layoutX="24.0" layoutY="85.0" text="Appointments Records:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TableView layoutX="24.0" layoutY="116.0" prefHeight="292.0" prefWidth="368.0">
+        <columns>
+            <TableColumn maxWidth="116.0" prefWidth="85.0" text="Date" />
+          <TableColumn prefWidth="148.0" text="Paients Name" />
+            <TableColumn prefWidth="134.0" text="Doctor Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="bBack" layoutX="24.0" layoutY="421.0" mnemonicParsing="false" onAction="#toBack" style="-fx-background-color: #1976D2;" text="Back" textFill="WHITE" />
+      <Button fx:id="bExit" layoutX="624.0" layoutY="421.0" mnemonicParsing="false" onAction="#toExit" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #1976D2;" text="Exit" textFill="WHITE" />
+      <Label layoutX="272.0" layoutY="21.0" text="Appointments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fSearch" layoutX="421.0" layoutY="327.0" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="421.0" layoutY="297.0" text="Search:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fDate" layoutX="466.0" layoutY="123.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label layoutX="434.0" layoutY="198.0" text="Doctor Name:" textFill="WHITE" />
+      <Label layoutX="434.0" layoutY="162.0" text="Patient Name:" textFill="WHITE" />
+      <Label layoutX="434.0" layoutY="127.0" text="Date:" textFill="WHITE" />
+      <Label layoutX="421.0" layoutY="85.0" text="Information:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="bDelete" layoutX="579.0" layoutY="240.0" mnemonicParsing="false" onAction="#toDelete" prefHeight="25.0" prefWidth="72.0" text="Delete" />
+      <Button fx:id="bEdit" layoutX="501.0" layoutY="240.0" mnemonicParsing="false" onAction="#toEdit" prefHeight="25.0" prefWidth="72.0" text="Edit" />
+      <Button fx:id="bSearch" layoutX="579.0" layoutY="368.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="25.0" prefWidth="72.0" text="Search" />
+      <Button fx:id="bNew" layoutX="423.0" layoutY="240.0" mnemonicParsing="false" onAction="#toNew" prefHeight="25.0" prefWidth="72.0" text="New" />
+      <ComboBox fx:id="patient" layoutX="515.0" layoutY="158.0" prefHeight="25.0" prefWidth="129.0" />
+      <ComboBox fx:id="doctor" layoutX="515.0" layoutY="194.0" prefHeight="25.0" prefWidth="129.0" />
+   </children>
+</AnchorPane>

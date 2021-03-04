@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="556.0" style="-fx-background-color: #1565C0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.APatientController">
+   <children>
+      <Label layoutX="28.0" layoutY="65.0" text="Choose form buttons:" textFill="WHITE" />
+      <TableView layoutX="50.0" layoutY="104.0" prefHeight="248.0" prefWidth="457.0">
+        <columns>
+          <TableColumn prefWidth="112.0" text="Name" />
+            <TableColumn prefWidth="72.0" text="Age" />
+            <TableColumn prefWidth="125.0" text="Phone" />
+            <TableColumn prefWidth="98.0" text="Blood Type" />
+        </columns>
+      </TableView>
+      <Button fx:id="bBack" layoutX="28.0" layoutY="372.0" mnemonicParsing="false" onAction="#toBack" style="-fx-background-color: #1976D2;" text="Back" textFill="WHITE" />
+      <Button fx:id="bExit" layoutX="480.0" layoutY="372.0" mnemonicParsing="false" onAction="#toExit" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #1976D2;" text="Exit" textFill="WHITE" />
+      <Label layoutX="241.0" layoutY="23.0" text="Patients" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="258.0" prefWidth="300.0" style="-fx-background-color: #0D47A1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ErrorMessageController">
+   <children>
+      <Label layoutX="19.0" layoutY="113.0" text="You enterd wrong username or password, " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="138.0" text="Do you want to try again?" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="bTryAgain" layoutX="43.0" layoutY="189.0" mnemonicParsing="false" onAction="#toTryAgain" text="Try Again" />
+      <Button fx:id="bExit" layoutX="197.0" layoutY="189.0" mnemonicParsing="false" onAction="#toExit" prefHeight="25.0" prefWidth="67.0" text="Exit" />
+      <ImageView fitHeight="80.0" fitWidth="89.0" layoutX="103.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/warning.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.23" contrast="0.35" hue="0.12" saturation="-0.09" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

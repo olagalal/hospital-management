@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="751.0" style="-fx-background-color: #1565C0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.UPatientController">
+   <children>
+      <TilePane layoutX="480.0" layoutY="279.0" prefHeight="116.0" prefWidth="253.0" style="-fx-background-color: #2979FF;" />
+      <TilePane layoutX="479.0" layoutY="60.0" prefHeight="208.0" prefWidth="253.0" style="-fx-background-color: #2979FF;" />
+      <Label layoutX="22.0" layoutY="75.0" text="Patients Records:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="22.0" layoutY="106.0" onMouseClicked="#setAction" prefHeight="292.0" prefWidth="433.0" />
+      <Button fx:id="bNew" layoutX="490.0" layoutY="230.0" mnemonicParsing="false" onAction="#toNew" prefHeight="25.0" prefWidth="72.0" text="New" />
+      <Button fx:id="bSearch" layoutX="570.0" layoutY="352.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="25.0" prefWidth="72.0" text="Search" />
+      <Button fx:id="bEdit" layoutX="568.0" layoutY="230.0" mnemonicParsing="false" onAction="#toEdit" prefHeight="25.0" prefWidth="72.0" text="Edit" />
+      <Button fx:id="bDelete" layoutX="646.0" layoutY="230.0" mnemonicParsing="false" onAction="#toDelete" prefHeight="25.0" prefWidth="72.0" text="Delete" />
+      <Button fx:id="bBack" layoutX="22.0" layoutY="413.0" mnemonicParsing="false" onAction="#toBack" style="-fx-background-color: #1976D2;" text="Back" textFill="WHITE" />
+      <Button fx:id="bExit" layoutX="690.0" layoutY="413.0" mnemonicParsing="false" onAction="#toExit" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #1976D2;" text="Exit" textFill="WHITE" />
+      <Label layoutX="303.0" layoutY="14.0" text="Patients" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="488.0" layoutY="75.0" text="Information:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="102.0" text="Name:" textFill="WHITE" />
+      <Label layoutX="501.0" layoutY="133.0" text="Age:" textFill="WHITE" />
+      <Label layoutX="501.0" layoutY="165.0" text="Phone:" textFill="WHITE" />
+      <TextField fx:id="fName" layoutX="550.0" layoutY="98.0" prefHeight="25.0" prefWidth="161.0" />
+      <TextField fx:id="fAge" layoutX="550.0" layoutY="129.0" prefHeight="25.0" prefWidth="161.0" />
+      <TextField fx:id="fPhone" layoutX="550.0" layoutY="161.0" prefHeight="25.0" prefWidth="161.0" />
+      <Label layoutX="488.0" layoutY="287.0" text="Search by Name:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fSearch" layoutX="488.0" layoutY="317.0" prefHeight="25.0" prefWidth="228.0" />
+      <Label layoutX="501.0" layoutY="196.0" text="Blood Type:" textFill="WHITE" />
+      <TextField fx:id="fBloodType" layoutX="572.0" layoutY="192.0" prefHeight="25.0" prefWidth="139.0" />
+      <Button layoutX="646.0" layoutY="352.0" mnemonicParsing="false" onAction="#toView" prefHeight="25.0" prefWidth="72.0" text="Done" />
+   </children>
+</AnchorPane>

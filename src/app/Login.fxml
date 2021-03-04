@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="300.0" style="-fx-background-color: #133c55;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.LoginController">
+   <children>
+      <TextField fx:id="username" layoutX="122.0" layoutY="132.0" />
+      <TextField fx:id="password" layoutX="122.0" layoutY="179.0" />
+      <Label layoutX="36.0" layoutY="135.0" text="Username" textFill="#59a5d8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="182.0" text="Password" textFill="#59a5d8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="bLogin" layoutX="119.0" layoutY="230.0" mnemonicParsing="false" onAction="#setAction" prefHeight="25.0" prefWidth="63.0" text="Login" />
+      <Label fx:id="exit" layoutX="271.0" layoutY="14.0" onMouseClicked="#toExit" text="X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="114.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/hospital.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="220.0" prefWidth="300.0" style="-fx-background-color: #1565C0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AdminController">
+   <children>
+      <Button fx:id="bDoc" layoutX="94.0" layoutY="121.0" mnemonicParsing="false" onAction="#toDoc" prefHeight="25.0" prefWidth="112.0" text="Doctors" />
+      <Button fx:id="bPatients" layoutX="94.0" layoutY="77.0" mnemonicParsing="false" onAction="#toPatients" prefHeight="25.0" prefWidth="112.0" text="Patients" />
+      <Button fx:id="bBack" layoutX="16.0" layoutY="175.0" mnemonicParsing="false" onAction="#toBack" style="-fx-background-color: #1976D2;" text="Back" textFill="WHITE" />
+      <Label layoutX="36.0" layoutY="32.0" text="Welcome Admin," textFill="WHITE" />
+      <Button fx:id="bExit" layoutX="241.0" layoutY="175.0" mnemonicParsing="false" onAction="#toExit" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #1976D2;" text="Exit" textFill="WHITE" />
+   </children>
+</AnchorPane>
